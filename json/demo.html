@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.pull-up {
+			line-height:40px;
+			cursor:pointer;
+			margin-top:10px;
+			text-align:center;
+		}
+		.pull-up .pull-icon {
+		  display: inline-block;
+		  vertical-align: top;
+		  width: 40px;
+		  height: 40px;
+		  background: url(http://www.pwstrick.com/static/img/pull-icon.png) 0 0 no-repeat;
+		  background-size: 40px 80px;
+		  /*chrome*/
+		  
+		  -webkit-background-size: 40px 80px;
+		  -webkit-transition-property: -webkit-transform;
+		  -webkit-transition-duration: 250ms;
+		  /*ff*/
+		  
+		  -moz-background-size: 40px 80px;
+		  -moz-transition-property: -moz-transform;
+		  -moz-transition-duration: 250ms;
+		}
+
+		.pull-up-loading .pull-icon {
+		  background-position: 0 100%;
+		  /*chrome*/
+		  
+		  -webkit-transform: rotate(0deg) translateZ(0);
+		  -webkit-transition-duration: 0ms;
+		  -webkit-animation-name: loading;
+		  -webkit-animation-duration: 2s;
+		  -webkit-animation-iteration-count: infinite;
+		  -webkit-animation-timing-function: linear;
+		  /*ff*/
+		  
+		  -moz-transform: rotate(0deg) translateZ(0);
+		  -moz-transition-duration: 0ms;
+		  -moz-animation-name: loading;
+		  -moz-animation-duration: 2s;
+		  -moz-animation-iteration-count: infinite;
+		  -moz-animation-timing-function: linear;
+		}
+		/*chrome*/
+
+		@-webkit-keyframes loading {
+		  from {
+		    -webkit-transform: rotate(0deg) translateZ(0);
+		  }
+		  to {
+		    -webkit-transform: rotate(360deg) translateZ(0);
+		  }
+		}
+		/*ff*/
+
+		@-moz-keyframes loading {
+		  from {
+		    -moz-transform: rotate(0deg) translateZ(0);
+		  }
+		  to {
+		    -moz-transform: rotate(360deg) translateZ(0);
+		  }
+		}
+	</style>
+</head>
+<body>
+	<div class="pull-up pull-up-loading">
+	  <span class="pull-icon"></span>正在载入中....
+	</div>
+</body>
+</html>
