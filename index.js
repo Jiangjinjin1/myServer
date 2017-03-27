@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var all = require('./routes/all');
 
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 8080));
 
 app.use(express.static(__dirname + '/public'));
 
